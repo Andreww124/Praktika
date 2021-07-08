@@ -1,15 +1,16 @@
-/*1*/
+//1
 
 alert('Я JavaScript!')
 
-/*2*/
+//2
+  
 "use strict";
 
 let a = prompt('какое "официальное"название JavaScript?')
 if (a =="ECMAScript"){alert('Верно');
 }else {alert('Не знаете? ECMAScript!')} 
 
-/*3*/
+//3
 
 "use strict"
 let admin;
@@ -18,12 +19,12 @@ name = "Джон";
 admin=name;
 alert(admin);
 
-/*4*/
+//4
 
 let Name = prompt('Как вас зовут ?');
 alert(`Вас зовут ${Name}`);
 
-/*5*/
+//5
 
 let a = prompt('Введите число');
 
@@ -35,7 +36,7 @@ if (a > 0) {
   alert( 0 );
 }
 
-/*6*/
+//6
 
 let login = prompt(`Кто там?`);
 let pass;
@@ -53,7 +54,7 @@ if (!(pass !== undefined)) {
     alert("Неверный пароль");
 }   else alert("Здравствуйте!")
 
-/*7*/
+//7
 
 for (let i = 2; i <= 10; i++) {
     if (i % 2 == 0) {
@@ -61,14 +62,14 @@ for (let i = 2; i <= 10; i++) {
     }
   }
 
-   /*8*/
+ //8
 
    let num;
    do {
      num = prompt("Введите число, большее 100?", 0);
    } while (num <= 100 && num);
 
-   /*9*/
+ //9
 
 
    let n = 10;
@@ -83,7 +84,7 @@ for (let i = 2; i <= 10; i++) {
      alert( i );
    }
    
-   /*10*/
+ //10
 
    function pow(x, n) {
     let result = x;
@@ -104,7 +105,7 @@ for (let i = 2; i <= 10; i++) {
     alert( pow(x, n) );
   }
 
-  /*11*/
+  //11
 
   function ask(question, yes, no) {
     if (confirm(question)) yes()
@@ -116,7 +117,7 @@ for (let i = 2; i <= 10; i++) {
     () => alert("Вы отменили выполнение.")
   );
 
-  /*12*/
+  //12
   let calculator = {
     sum() {
       return this.a + this.b;
@@ -136,7 +137,7 @@ for (let i = 2; i <= 10; i++) {
   alert( calculator.sum() );
   alert( calculator.mul() );
 
-  /*13*/
+  //13
 
   function Calculator() {
 
@@ -160,7 +161,7 @@ for (let i = 2; i <= 10; i++) {
   alert( "Sum=" + calculator.sum() );
   alert( "Mul=" + calculator.mul() );
 
-  /*14*/
+  //14
 
   function Accumulator(startingValue) {
     this.value = startingValue;
@@ -175,7 +176,7 @@ for (let i = 2; i <= 10; i++) {
   accumulator.read();
   alert(accumulator.value);
 
-  /*15*/
+  //15
 
   function random(min, max) {
     return min + Math.random() * (max - min);
