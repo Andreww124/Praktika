@@ -2,14 +2,14 @@
 
 alert('Я JavaScript!')
 
-/*задание 2 */
+/*2*/
 "use strict";
 
 let a = prompt('какое "официальное"название JavaScript?')
 if (a =="ECMAScript"){alert('Верно');
 }else {alert('Не знаете? ECMAScript!')} 
 
-/*задание 3 */
+/*3*/
 
 "use strict"
 let admin;
@@ -18,12 +18,12 @@ name = "Джон";
 admin=name;
 alert(admin);
 
-/*задание 4 */
+/*4*/
 
-let Name = prompt('Как тебя зовут ?');
-alert(`Тебя зовут ${Name}`);
+let Name = prompt('Как вас зовут ?');
+alert(`Вас зовут ${Name}`);
 
-/*задание 5 */
+/*5*/
 
 let a = prompt('Введите число');
 
@@ -35,7 +35,7 @@ if (a > 0) {
   alert( 0 );
 }
 
-/*задание 6 */
+/*6*/
 
 let login = prompt(`Кто там?`);
 let pass;
@@ -53,7 +53,7 @@ if (!(pass !== undefined)) {
     alert("Неверный пароль");
 }   else alert("Здравствуйте!")
 
-/*задание 7 */
+/*7*/
 
 for (let i = 2; i <= 10; i++) {
     if (i % 2 == 0) {
@@ -61,15 +61,14 @@ for (let i = 2; i <= 10; i++) {
     }
   }
 
-   /*задание 8 */
+   /*8*/
 
    let num;
-
    do {
      num = prompt("Введите число, большее 100?", 0);
    } while (num <= 100 && num);
 
-   /*задание 9 */
+   /*9*/
 
 
    let n = 10;
@@ -84,7 +83,7 @@ for (let i = 2; i <= 10; i++) {
      alert( i );
    }
    
-   /*задание 10 */
+   /*10*/
 
    function pow(x, n) {
     let result = x;
@@ -105,21 +104,19 @@ for (let i = 2; i <= 10; i++) {
     alert( pow(x, n) );
   }
 
-  /*задание 11 */
+  /*11*/
 
   function ask(question, yes, no) {
     if (confirm(question)) yes()
     else no();
-  }
-  
+  }  
   ask(
     "Вы согласны?",
     () => alert("Вы согласились."),
     () => alert("Вы отменили выполнение.")
   );
 
-  /*задание 12 */
-
+  /*12*/
   let calculator = {
     sum() {
       return this.a + this.b;
@@ -139,7 +136,7 @@ for (let i = 2; i <= 10; i++) {
   alert( calculator.sum() );
   alert( calculator.mul() );
 
-  /*задание 13 */
+  /*13*/
 
   function Calculator() {
 
@@ -163,22 +160,22 @@ for (let i = 2; i <= 10; i++) {
   alert( "Sum=" + calculator.sum() );
   alert( "Mul=" + calculator.mul() );
 
-  /*задание 14 */
+  /*14*/
 
   function Accumulator(startingValue) {
     this.value = startingValue;
   
     this.read = function() {
       this.value += +prompt('Сколько нужно добавить?', 0);
-    };
-  
+    };  
   }
   
   let accumulator = new Accumulator(1);
   accumulator.read();
   accumulator.read();
   alert(accumulator.value);
-  /*задание 15 */
+
+  /*15*/
 
   function random(min, max) {
     return min + Math.random() * (max - min);
